@@ -84,7 +84,7 @@
   (if (or (null? lst1) (null? lst2))
       '()
       (cons (f (head lst1) (head lst2))
-            (zip (tail lst1) (tail lst2)))))
+            (zipWith f (tail lst1) (tail lst2)))))
 
 (define (zip lst1 lst2)
   (zipWith cons lst1 lst2))
