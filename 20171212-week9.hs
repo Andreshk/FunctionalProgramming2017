@@ -5,9 +5,9 @@ saySign x = if x < 0
                  then "Zero"
                  else "Positive"
 
--- jiakldfhasukdhahjdhasjh
+-- single-line comment
 {-
-iei
+multi-line
 comment
 -}
 
@@ -35,11 +35,11 @@ fib n = if n < 2
         then n
         else fib (n-1) + fib (n-2)
 
-fib' :: Integer -> Integer
-fib' n
+fib1 :: Integer -> Integer
+fib1 n
   | n == 0    = 0
   | n == 1    = 1
-  | otherwise = fib' (n-1) + fib' (n-2)
+  | otherwise = fib1 (n-1) + fib1 (n-2)
 
 fib2 :: Integer -> Integer
 fib2 0 = 0
