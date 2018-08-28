@@ -94,7 +94,7 @@
   (if (or (null? lst) (null? (tail lst)))
       #t
       (and (<= (head lst) (head (tail lst)))
-           (sorted? lst))))
+           (sorted? (tail lst)))))
 
 (define (sorted?* lst)
   (define (make-pairs lst) (zip lst (tail lst)))
